@@ -5,6 +5,8 @@
         <title>WeatherNow</title>
     </head>
     <body>
-        {{ date.strftime("%A, %d %B, %Y at %X") }}
+        {% for city in cities %}
+            <p>The weather in {{city["name"]}} is {{city["temperature"]}}.</p>
+        {% endfor %}
     </body>
 </html>
