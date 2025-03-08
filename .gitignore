@@ -2,3 +2,4 @@ venv/
 .env
 weathr/.env
 neon-connect.py
+/venv
